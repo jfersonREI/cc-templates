@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formal Offer Letter - {{CompanyName}}</title>
+
+    <!-- Import Public Sans from Google Fonts -->
+    <link href="fonts.googleapis.com" rel="stylesheet" />
+
+    <style>
+      /* Base styles using Public Sans as the primary font */
+      body {
+        font-family: "Public Sans", "Segoe UI", Tahoma, Geneva, Verdana,
+          sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+        background-color: #f4f4f4;
+      }
+
+      .letter-container {
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        padding: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        text-align: left;
+        margin-bottom: 30px;
+      }
+
+      .logo {
+        max-width: 160px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .content {
+        margin-top: 20px;
+      }
+
+      .signature-section {
+        margin-top: 50px;
+      }
+
+      /* Print-specific styles for PDF conversion */
+      @media print {
+        body {
+          background-color: #fff;
+          margin: 0;
+          padding: 0;
+        }
+
+        .letter-container {
+          box-shadow: none;
+          padding: 1in;
+          max-width: 100%;
+          margin: 0;
+        }
+
+        @page {
+          size: portrait;
+          margin: 1in;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="letter-container">
+      <div class="header">
+        <!-- Replace 'your_logo_path.png' with the actual path or URL -->
+        <img src="img/company-logo.svg" alt="{{CompanyName}}" class="logo" />
+        <h2>Formal Offer Letter</h2>
+      </div>
+
+      <div class="content">
+        <p>{{CurrentDate}}</p>
+        <p>
+          <strong>{{CandidateName}}</strong><br />
+          {{CandidateAddressLine1}}<br />
+          {{CandidateAddressLine2}}
+        </p>
+
+        <p>Dear {{CandidateName}},</p>
+
+        <p>
+          We are pleased to offer you the position of {{PositionOffered}} with
+          {{CompanyName}} under the {{LotteryName}}. This offer is contingent on
+          the terms and conditions outlined below.
+        </p>
+
+        <p><strong>Title:</strong> {{PositionOffered}}</p>
+
+        <p>Start date is {{StartDate}}.</p>
+
+        <p>
+          Your compensation and any applicable benefits will be provided
+          separately or as outlined in the offer summary associated with this
+          letter. Any such details are subject to the relevant policies and
+          regulations of {{CompanyName}}.
+        </p>
+
+        <p>
+          At {{CompanyName}}, you'll manage restaurant operations, including
+          staff oversight, customer service, compliance, and performance
+          targets.
+        </p>
+
+        <p>
+          This offer is contingent upon your continued eligibility for
+          participation in the {{LotteryName}} and the successful completion of
+          any required verification, background checks, or other pre-employment
+          conditions.
+        </p>
+
+        <p>
+          Employment in this role is governed by applicable laws and
+          {{CompanyName}} policies. By accepting this offer, you acknowledge you
+          have read and understood the terms in this letter and accompanying
+          documents.
+        </p>
+
+        <p>
+          We appreciate your interest in joining {{CompanyName}} and look
+          forward to the possibility of working with you.
+        </p>
+      </div>
+
+      <div class="signature-section">
+        <p>Sincerely,</p>
+        <!-- Signature line placeholder -->
+        <p>{{CompanyName}}</p>
+      </div>
+    </div>
+  </body>
+</html>
