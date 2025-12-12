@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="www.w3.org">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Subject Line for ESP use: Your {{LotteryName}} lottery application has been received -->
+    <title>Your {{LotteryName}} lottery application has been received</title>
+    <style type="text/css">
+      /* Basic Client-specific styles */
+      .ReadMsgBody {
+        width: 100%;
+      }
+      .ExternalClass {
+        width: 100%;
+      }
+      body {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      table,
+      td {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+      img {
+        border: 0;
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+      }
+      a img {
+        border: none;
+      }
+    </style>
+  </head>
+  <body style="margin: 0; padding: 0; background-color: #f4f4f4">
+    <!-- Preheader Text (Summarizes the email content in the inbox list) -->
+    <div style="display: none; max-height: 0; overflow: hidden">
+      Thank you for submitting your application for the {{LotteryName}}.
+    </div>
+
+    <!-- Main Outer Table (Full width background) -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td style="padding: 20px 0 40px 0">
+          <!-- Main Email Container Table (Fixed width, centered) -->
+          <table
+            align="center"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="600"
+            style="
+              border-collapse: collapse;
+              background-color: #ffffff;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <!-- Logo Section -->
+            <tr>
+              <td align="center" style="padding: 40px 0 60px 0">
+                <!-- Replace this src URL with your actual logo image URL -->
+                <img
+                  src="img/company-logo.svg"
+                  alt="{{CompanyName}}"
+                  width="240"
+                  style="display: block; border: 0"
+                />
+              </td>
+            </tr>
+
+            <!-- Content Section -->
+            <tr>
+              <td style="padding: 0 30px 40px 30px">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td
+                      style="
+                        color: #153643;
+                        font-family: Arial, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding-bottom: 20px;
+                      "
+                    >
+                      Hi {{ApplicantFirstName}},
+                    </td>
+                  </tr>
+                  <tr>
+                    <!-- Main Body Text (Thank you for submitting) -->
+                    <td
+                      style="
+                        color: #153643;
+                        font-family: Arial, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding-bottom: 20px;
+                      "
+                    >
+                      Thank you for submitting your application for the
+                      {{LotteryName}}.
+                    </td>
+                  </tr>
+                  <tr>
+                    <!-- Application Details Confirmation -->
+                    <td
+                      style="
+                        color: #153643;
+                        font-family: Arial, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding-bottom: 20px;
+                      "
+                    >
+                      We have received your lottery application and recorded it
+                      under the following details:
+                      <ul
+                        style="
+                          padding-left: 20px;
+                          margin-top: 10px;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <li style="margin-bottom: 5px">
+                          <strong>Application ID:</strong> {{ApplicationId}}
+                        </li>
+                        <li>
+                          <strong>Submission date and time:</strong>
+                          {{SubmissionDateTime}} {{SubmissionTimeZone}}
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <!-- Portal Link Instructions -->
+                    <td
+                      style="
+                        color: #153643;
+                        font-family: Arial, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding-bottom: 20px;
+                      "
+                    >
+                      You can review your application and status at any time by
+                      signing in to your account:<br />
+                      <a
+                        href="{{PortalUrl}}"
+                        style="color: #7452bd; text-decoration: underline"
+                        >{{PortalUrl}}</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <!-- Important Notes Section -->
+                    <td
+                      style="
+                        color: #153643;
+                        font-family: Arial, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding-bottom: 20px;
+                        border-top: 1px solid #eee;
+                        padding-top: 20px;
+                      "
+                    >
+                      <strong style="display: block; padding-bottom: 10px"
+                        >Please note:</strong
+                      >
+                      <ul
+                        style="
+                          padding-left: 20px;
+                          margin-top: 0;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <li style="margin-bottom: 5px">
+                          Your application will be reviewed for basic
+                          eligibility, including location and experience
+                          criteria.
+                        </li>
+                        <li style="margin-bottom: 5px">
+                          Only eligible applications submitted within the
+                          lottery submission window will be included in the
+                          lottery pool.
+                        </li>
+                        <li>
+                          If your application is selected in the lottery, you
+                          will receive a separate email with your selection
+                          notice and instructions to accept or decline the
+                          offer.
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <!-- Sign-off -->
+                    <td
+                      style="
+                        color: #153643;
+                        font-family: Arial, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                      "
+                    >
+                      Thank you for your interest in {{CompanyName}}.<br />
+                      <br />
+                      Sincerely,<br />
+                      <strong>{{CompanyName}}</strong>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Footer Section -->
+            <tr>
+              <td style="padding: 30px; background-color: #eeeeee">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td
+                      style="
+                        color: #555555;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                      "
+                      align="center"
+                    >
+                      &copy; {{CurrentYear}} {{CompanyName}}. All rights
+                      reserved.
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
